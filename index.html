@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сад Soul Knight — Полная Энциклопедия</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+     
+<h1>Полный Справочник <a href="https://tof1xxx.github.io/soulknight-garden/wiki_garden.html" class="secret-wiki-link">Сада</a> Soul Knight</h1>
+
+        <div class="subtitle">Полная версия • Нажмите на название растения для перехода к описанию</div>
+
+        <!-- Поле поиска с ПЕРВЫМ кристаллом (Яд) справа от него -->
+        <div class="search-wrapper">
+            <input type="text" id="plant-search" placeholder="Поиск растения по названию...">
+            <img src="poison.png" class="element-fragment search-pos" data-element="poison" alt="Фрагмент Яда">
+        </div>
+
+        <!-- ТАБЛИЦА -->
+        <div class="inventory-grid">
+            <div class="grid-header">
+                <div class="header-cell space-left">
+                    <svg xmlns="http://w3.org" viewBox="0 0 16 16" class="pixel-icon">
+                        <path d="M4 4h3v1H4zm3 1h1v1H7zm1 1h4v1H8zm4 1h1v1h-1zm-2 1h1v1h-1zm-3-2h1v1H7zm0 2h1v7H7zm0 7h1v1H7zM3 5h1v1H3zm3 1h1v1H6zm-1 1h1v1H5zm-1 1h1v1H4z" fill="#000"/>
+                        <path d="M4 5h3v1H4zm3 1h1v7H7zm1-1h4v1H8zm3 1h1v1h-1zm-1 1h1v1h-1zm-4-1h1v1H7zM5 6h1v1H5zm-1 1h1v1H4z" fill="#22b14c"/>
+                    </svg>
+                    <span>Растение</span>
+                </div>
+
+                <div class="header-cell">
+                    <svg xmlns="http://w3.org" viewBox="0 0 16 16" class="pixel-icon">
+                        <path d="M6 1h4v2H6zm0 11h4v2H6z" fill="#704838"/>
+                        <path d="M6 1h4v1H6zm4 1h1v1h-1zm1 1h1v2h-1zm1 2h1v5h-1zm-1 5h-1v2h1zm-1 2h-4v1h4zm-4-1H5v-2h1zm-1-2H4v-5h1zm1-5h1v-1H6zm0-1h4v1H6z" fill="#000"/>
+                        <path d="M5 4h6v1H5zm-1 1h8v5H4zm1 5h6v1H5z" fill="#a0a0c0"/>
+                        <path d="M6 5h4v1H6zm-1 1h6v3H5zm1 3h4v1H6z" fill="#385898"/>
+                        <path d="M8 6h1v2H8zm-1 1h1v1H7z" fill="#fff"/>
+                    </svg>
+                    <span>Время</span>
+                </div>
+
+                <div class="header-cell">
+                    <div class="table-icon-fertilizer"></div>
+                    <span>Удобр.</span>
+                </div>
+                
+                <div class="header-cell">
+                    <svg xmlns="http://w3.org" viewBox="0 0 16 16" class="pixel-icon">
+                        <path d="M7 1h2v1H7zm-1 1h1v1H6zm3 0h1v1H9zm-1 1h1v1H8zm-2 0h1v1H6zm4 0h1v1H10zm-3 1h1v1H7zm-3 0h1v1H4zm7 0h1v1H11zm-1 1h1v1H10zm-5 0h1v1H5zm1 1h1v7H6zm4 0h1v7h-1zm-4 6h4v1H6zm-3-8h3v1H3zm7 0h3v1h-3z" fill="#000"/>
+                        <path d="M7 2h2v1H7zm-1 1h4v1H6zm-1 1h6v1H5zm-1 1h8v1H4zm3 1h2v7H7z" fill="#22b14c"/>
+                    </svg>
+                    <span>Фазы</span>
+                </div>
+
+                <div class="header-cell space-left-large">
+                    <svg xmlns="http://w3.org" viewBox="0 0 16 16" class="pixel-icon">
+                        <path d="M2 3h12v1H2zm0 1v10h1v-10zm11 0v10h1v-10zm-11 9h10v1H3zm4-5h2v2H7z" fill="#000"/>
+                        <path d="M3 4h10v2H3zm0 6h10v3H3z" fill="#ffb700"/>
+                        <path d="M3 6h4v1H3zm5 0h5v1H8zm-5 1h10v2H3zm0 2h4v1H3zm5 0h5v1H8z" fill="#704838"/>
+                        <path d="M7 8h2v2H7z" fill="#a0a0c0"/>
+                    </svg>
+                    <span>Награда при сборе</span>
+                </div>
+            </div>
+
+            <!-- Ряды растений -->
+            <div class="plant-row">
+                <div><a href="#dragon-fruit" class="plant-link">Драконий фрукт</a></div>
+                <div class="info-cell">24 ч.</div>
+                <div class="info-cell">4 шт.</div>
+                <div class="info-cell">4</div>
+                <div class="reward-cell-clean">Иммунитет к огню и взрывам</div>
+            </div>
+            <div class="plant-row">
+                <div><a href="#mandrake" class="plant-link">Мандрагора</a></div>
+                <div class="info-cell">24 ч.</div>
+                <div class="info-cell">3 шт.</div>
+                <div class="info-cell">3</div>
+                <div class="reward-cell-clean">Иммунитет к яду и токсинам</div>
+            </div>
+
+            <div class="plant-row">
+                <div><a href="#caterpillar" class="plant-link">Гусеничный гриб</a></div>
+                <div class="info-cell">24 ч.</div>
+                <div class="info-cell">4 шт.</div>
+                <div class="info-cell">4</div>
+                <div class="reward-cell-clean">Увеличение макс. здоровья</div>
+            </div>
+            <div class="plant-row">
+                <div><a href="#gem-bush" class="plant-link">Самоцветный куст</a></div>
+                <div class="info-cell">24 ч.</div>
+                <div class="info-cell">4 шт.</div>
+                <div class="info-cell">4</div>
+                <div class="reward-cell-clean">+288 Самоцветов (Каждый день)</div>
+            </div>
+            <div class="plant-row">
+                <div><a href="#bamboo" class="plant-link">Бамбук</a></div>
+                <div class="info-cell">24 ч.</div>
+                <div class="info-cell">1 шт.</div>
+                <div class="info-cell">3</div>
+                <div class="reward-cell-clean">Оружие ближнего/дальнего боя "Бамбук"</div>
+            </div>
+            <div class="plant-row">
+                <div><a href="#carrot" class="plant-link">Морковь</a></div>
+                <div class="info-cell">24 ч.</div>
+                <div class="info-cell">1 шт.</div>
+                <div class="info-cell">3</div>
+                <div class="reward-cell-clean">Оружие пистолет "Морковь"</div>
+            </div>
+            <div class="plant-row">
+                <div><a href="#devils-snare" class="plant-link">Дурман</a></div>
+                <div class="info-cell">24 ч.</div>
+                <div class="info-cell">3 шт.</div>
+                <div class="info-cell">3</div>
+                <div class="reward-cell-clean">Питомец-помощник на один забег</div>
+            </div>
+            <div class="plant-row">
+                <div><a href="#cactus" class="plant-link">Кактус</a></div>
+                <div class="info-cell">24 ч.</div>
+                <div class="info-cell">3 шт.</div>
+                <div class="info-cell">3</div>
+                <div class="reward-cell-clean">Иммунитет к шипам и травмам от тарана</div>
+            </div>
+            <div class="plant-row">
+                <div><a href="#rainbow-grass" class="plant-link">Радужная трава</a></div>
+                <div class="info-cell">24 ч.</div>
+                <div class="info-cell">2 шт.</div>
+                <div class="info-cell">3</div>
+                <div class="reward-cell-clean">Увеличение шанса критического удара</div>
+            </div>
+            <div class="plant-row">
+                <div><a href="#titan-arum" class="plant-link">Титановый арум</a></div>
+                <div class="info-cell">24 ч.</div>
+                <div class="info-cell">2 шт.</div>
+                <div class="info-cell">3</div>
+                <div class="reward-cell-clean">Оружие ближнего боя "Титановый арум"</div>
+            </div>
+            <div class="plant-row">
+                <div><a href="#golden-mushroom" class="plant-link">Золотой гриб</a></div>
+                <div class="info-cell">24 ч.</div>
+                <div class="info-cell">4 шт.</div>
+                <div class="info-cell">4</div>
+                <div class="reward-cell-clean">Бафф скидки у торговцев (50%)</div>
+            </div>
+            <div class="plant-row">
+                <div><a href="#gem-flower" class="plant-link">Цветок самоцветов</a></div>
+                <div class="info-cell">24 ч.</div>
+                <div class="info-cell">2 шт.</div>
+                <div class="info-cell">3</div>
+                <div class="reward-cell-clean">Разовая награда: +288 Самоцветов</div>
+            </div>
+            <div class="plant-row">
+                <div><a href="#gear-flower" class="plant-link">Шестеренчатый цветок</a></div>
+                <div class="info-cell">24 ч.</div>
+                <div class="info-cell">2 шт.</div>
+                <div class="info-cell">3</div>
+                <div class="reward-cell-clean">Материалы: 3 Детали (Шестеренки)</div>
+            </div>
+            <div class="plant-row">
+                <div><a href="#ironwood" class="plant-link">Железное дерево</a></div>
+                <div class="info-cell">24 ч.</div>
+                <div class="info-cell">2 шт.</div>
+                <div class="info-cell">3</div>
+                <div class="reward-cell-clean">Материалы: 4 Единицы Железа</div>
+            </div>
+
+            <div class="plant-row">
+                <div><a href="#green-onion" class="plant-link">Зеленый лук</a></div>
+                <div class="info-cell">24 ч.</div>
+                <div class="info-cell">2 шт.</div>
+                <div class="info-cell">3</div>
+                <div class="reward-cell-clean">Оружие ближнего боя "Зеленый лук"</div>
+            </div>
+            <div class="plant-row">
+                <div><a href="#oak-tree" class="plant-link">Дуб</a></div>
+                <div class="info-cell">24 ч.</div>
+                <div class="info-cell">3 шт.</div>
+                <div class="info-cell">3</div>
+                <div class="reward-cell-clean">Материалы: 10 Единиц Древесины</div>
+            </div>
+            <div class="plant-row">
+                <div><a href="#star-lotus" class="plant-link">Звездный лотос</a></div>
+                <div class="info-cell">24 ч.</div>
+                <div class="info-cell">3 шт.</div>
+                <div class="info-cell">3</div>
+                <div class="reward-cell-clean">Ускорение перезарядки навыка (25%)</div>
+            </div>
+            <div class="plant-row">
+                <div><a href="#golden-lily" class="plant-link">Золотая лилия</a></div>
+                <div class="info-cell">24 ч.</div>
+                <div class="info-cell">2 шт.</div>
+                <div class="info-cell">3</div>
+                <div class="reward-cell-clean">Разовая награда: +4 Наемные монеты</div>
+            </div>
+
+            <!-- ВТОРОЙ кристалл (Огонь) в конце таблицы, справа от центра -->
+            <div class="table-end-container">
+                <img src="fire.png" class="element-fragment table-pos" data-element="fire" alt="Фрагмент Огня">
+            </div>
+        </div> <!-- Конец таблицы inventory-grid -->
+
+        <div class="pixel-line"></div>
+
+        <!-- ОПИСАНИЯ РАСТЕНИЙ -->
+        <div class="encyclopedia-section">
+            <div id="dragon-fruit" class="plant-desc-block">
+                <div class="desc-title">Драконий фрукт</div>
+                <div class="desc-text">
+                    <strong>Внешний вид семени:</strong> Магматическое яйцо ярко-оранжевого цвета с черными чешуйками.<br>
+                    <strong>Взрослое дерево:</strong> Массивное пиксельное дерево с пылающей красно-желтой кроной.
+                </div>
+            </div>
+
+            <div id="mandrake" class="plant-desc-block">
+                <div class="desc-title">Мандрагора</div>
+                <div class="desc-text">
+                    <strong>Внешний вид семени:</strong> Темно-фиолетовый корень, напоминающий силуэт человека.<br>
+                    <strong>Взрослое дерево:</strong> Невысокий куст, из центра которого распускается ядовитый бутон.
+                </div>
+            </div>
+
+            <div id="caterpillar" class="plant-desc-block">
+                <div class="desc-title">Гусеничный гриб</div>
+                <div class="desc-text">
+                    <strong>Внешний вид семени:</strong> Продолговатая оранжевая спора, похожая на вытянутый кокон.<br>
+                    <strong>Взрослое дерево:</strong> Массивный оранжевый гриб с сегментированной структурой.
+                </div>
+            </div>
+
+            <div id="gem-bush" class="plant-desc-block">
+                <div class="desc-title">Самоцветный куст</div>
+                <div class="desc-text">
+                    <strong>Внешний вид семени:</strong> Маленький сверкающий кристалл голубого цвета.<br>
+                    <strong>Взрослое дерево:</strong> Пышный куст, усыпанный крупными ограненными самоцветами.
+                </div>
+            </div>
+
+            <div id="bamboo" class="plant-desc-block">
+                <div class="desc-title">Бамбук</div>
+                <div class="desc-text">
+                    <strong>Внешний вид куста:</strong> Тонкие зеленые тростинки, тянущиеся вверх.<br>
+                    <strong>Взрослое дерево:</strong> Крепкий полый стебель, готовый к срубу для получения оружия.
+                </div>
+            </div>
+
+            <div id="carrot" class="plant-desc-block relative-block">
+                <div class="desc-title">Морковь</div>
+                <div class="desc-text">
+                    <strong>Внешний вид куста:</strong> Пышная зеленая ботва на грядке.<br>
+                    <strong>Взрослое дерево:</strong> Созревшая крупная морковь, превращающаяся в пистолет.
+                </div>
+                <!-- Наш Синий кристалл теперь надежно спрятан здесь -->
+                <img src="ice.png" class="element-fragment mushroom-pos" data-element="ice" alt="Синий кристалл">
+            </div>
+
+            <div id="devils-snare" class="plant-desc-block">
+                <div class="desc-title">Дурман</div>
+                <div class="desc-text">
+                    <strong>Внешний вид куста:</strong> Хищные лозы босса, шевелящиеся на грядке.<br>
+                    <strong>Взрослое дерево:</strong> Опасный цветок, дающий питомца-помощника на один забег.
+                </div>
+            </div>
+
+            <div id="cactus" class="plant-desc-block">
+                <div class="desc-title">Кактус</div>
+                <div class="desc-text">
+                    <strong>Внешний вид куста:</strong> Острый пустынный суккулент с небольшими отростками.<br>
+                    <strong>Взрослое дерево:</strong> Цветущий кактус, дающий игроку иммунитет к шипам и тарану.
+                </div>
+            </div>
+
+            <div id="rainbow-grass" class="plant-desc-block">
+                <div class="desc-title">Радужная трава</div>
+                <div class="desc-text">
+                    <strong>Внешний вид куста:</strong> Пучки травы, где каждый листик имеет свой оттенок.<br>
+                    <strong>Взрослое дерево:</strong> Яркая светящаяся трава, повышающая шанс критического удара.
+                </div>
+            </div>
+
+            <div id="titan-arum" class="plant-desc-block">
+                <div class="desc-title">Титановый арум</div>
+                <div class="desc-text">
+                    <strong>Внешний вид куста:</strong> Огромные темно-зеленые раскидистые листья.<br>
+                    <strong>Взрослое дерево:</strong> Гигантский трупный цветок, дающий уникальное оружие ближнего боя.
+                </div>
+            </div>
+
+            <div id="gem-flower" class="plant-desc-block">
+                <div class="desc-title">Цветок самоцветов</div>
+                <div class="desc-text">
+                    <strong>Внешний вид куста:</strong> Тонкий стебель с розовым бутоном в драгоценной крошке.<br>
+                    <strong>Взрослое дерево:</strong> Одноразовый цветок, дающий россыпь в +288 самоцветов при сборе.
+                </div>
+            </div>
+
+            <div id="gear-flower" class="plant-desc-block">
+                <div class="desc-title">Шестеренчатый цветок</div>
+                <div class="desc-text">
+                    <strong>Внешний вид куста:</strong> Жесткие зубчатые механические листья с металлическим лязгом.<br>
+                    <strong>Взрослое дерево:</strong> Стальная сердцевина, дающая игроку 3 детали для крафта.
+                </div>
+            </div>
+
+            <div id="ironwood" class="plant-desc-block">
+                <div class="desc-title">Железное дерево</div>
+                <div class="desc-text">
+                    <strong>Внешний вид куста:</strong> Небольшое деревце с прямыми ветками стального цвета.<br>
+                    <strong>Взрослое дерево:</strong> Плотное стальное дерево, дающее 4 единицы железа в мастерской.
+                </div>
+            </div>
+
+            <div id="green-onion" class="plant-desc-block">
+                <div class="desc-title">Зеленый лук</div>
+                <div class="desc-text">
+                    <strong>Внешний вид куста:</strong> Высокие сочные зеленые перья лука пучком из центра.<br>
+                    <strong>Взрослое дерево:</strong> Созревшее растение, используемое как одноименное оружие ближнего боя.
+                </div>
+            </div>
+
+            <div id="oak-tree" class="plant-desc-block">
+                <div class="desc-title">Дуб</div>
+                <div class="desc-text">
+                    <strong>Внешний вид куста:</strong> Крепкий деревянный росток с первыми резными листьями.<br>
+                    <strong>Взрослое дерево:</strong> Вековое массивное дерево. При срубе дает 10 единиц древесины.
+                </div>
+            </div>
+
+            <div id="star-lotus" class="plant-desc-block">
+                <div class="desc-title">Звездный лотос</div>
+                <div class="desc-text">
+                    <strong>Внешний вид куста:</strong> Плотный раскрывающийся бутон, плавающий на воде.<br>
+                    <strong>Взрослое дерево:</strong> Магический светящийся лотос. Ускоряет откат навыка на 25%.
+                </div>
+            </div>
+
+            <div id="golden-lily" class="plant-desc-block">
+                <div class="desc-title">Золотая лилия</div>
+                <div class="desc-text">
+                    <strong>Внешний вид куста:</strong> Изящные стебли с золотым отливом, раскрывающиеся вширь.<br>
+                    <strong>Взрослое дерево:</strong> Благородный золотой цветок. Дает +4 наемные монеты для текущего забега.
+                </div>
+            </div>
+
+            <!-- ТРЕТИЙ кристалл (Лед) у описания Золотого гриба -->
+            <div id="golden-mushroom" class="plant-desc-block relative-block">
+                <div class="desc-title">Золотой гриб</div>
+                <div class="desc-text">
+                    <strong>Внешний вид семени:</strong> Блестящая золотистая спора ретро-формы.<br>
+                    <strong>Взрослое дерево:</strong> Роскошный сияющий гриб из чистого пиксельного золота.
+                </div>
+                </div>
+
+        <!-- ЧЕТВЕРТЫЙ кристалл (Молния) в самом конце сайта -->
+        <div class="site-footer-zone">
+            <img src="lighthing.png" class="element-fragment footer-pos" data-element="lighthing" alt="Фрагмент Молнии">
+        </div>
+    </div> <!-- Конец game-container -->
+
+    <!-- ПОСЛАННИЦА СТИХИЙ И ДИАЛОГОВОЕ ОКНО В СТИЛЕ FNF -->
+    <div id="element-envoy" class="hidden">
+        <img src="elemental.png" class="envoy-img" alt="Посланница Стихий">
+    </div>
+
+    <div id="dialogue-box" class="hidden">
+        <div class="dialogue-speaker">Посланница стихий</div>
+        <div class="dialogue-text-container">
+            <p id="dialogue-text"></p>
+        </div>
+        <div class="dialogue-hint">Нажми, чтобы продолжить...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
